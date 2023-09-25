@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
     <style>
-        .winner 
-        {
+        .winner {
             color: green;
         }
 
-        .loser
-        {
+        .loser {
             color: red;
         }
     </style>
-
 </head>
-<body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
 
-    <select name="" id="playto">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5" selected="selected">5</option>
-        <option value="6">6</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+1 Player Two</button>
-    <button id="reset">Reset</button>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="ping-pong Image.jpg" alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title">Ping-Pong Score Keeper </p>
+                    </header>
+                    
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-one"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <p class="subtitle">Use the buttons to increase score</p>
+
+                            <label for="playto" class="label is-large is-inline">Playing to</label>
+                            <div class="select is-rounded">
+                                <select name="" id="playto" class="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected="selected">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="card-footer">
+
+                        <button id="p1Button" class="button card-footer-item is-primary">+1 Player One</button>
+
+                        <button id="reset" class="button card-footer-item is-danger">Reset</button>
+
+                        <button id="p2Button" class="button card-footer-item is-info">+1 Player Two</button>
+
+                        
+
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
     <script src="app.js"></script>
 </body>
+
 </html>
